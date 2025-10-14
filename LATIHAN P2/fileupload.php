@@ -1,16 +1,17 @@
-<html> 
-<head> 
-<title>Form untuk input nama file</title> 
-</head> 
-<body> 
-<h1>Input nama file untuk Upload</h1> 
-<br>Klik Browse untuk memilih ! 
-<form enctype="multipart/form-data" method="post" 
-action="do_upload.php"> 
-<input type="hidden" name="MAX_FILE_SIZE" value="10000"> 
-Nama File : <input type="file" name="file1" size="30"> 
-<br> 
-<input type="submit" value="Upload"> 
-</form> 
-</body> 
+<html>
+<head>
+<title>Form upload file</title>
+</head>
+<body>
+    <h1>Upload file</h1>
+    <p>Klik Browser Uuntuk memillih file</p>
+    <form enctype="multipart/form-data" method="post" action="do_upload.php">
+    <!-- Batas maksimum  file (dalam byte) -->
+     <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+    <label>pilih file:</label>
+    <input type="file" name="file1" size="30" required>
+    <br><br>
+    <input type="submit" value="upload">
+    </form>
+</body>
 </html>
